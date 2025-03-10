@@ -11,13 +11,14 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "folders")
 public class Folder {
 
     @Id
-            @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "folders")
+    @ManyToMany(mappedBy = "foldersInCategories")
     private List<TaskCategory> categories;
 }

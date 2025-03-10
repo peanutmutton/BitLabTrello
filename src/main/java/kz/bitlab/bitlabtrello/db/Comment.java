@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity
+@Table(name = "comments")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,7 +18,7 @@ public class Comment {
     String comment;
 
     @ManyToOne
-    @JoinColumn(name = "task_id")
+//    @JoinColumn(name = "id")
     Task task;
 
     public Comment(String comment, Task task) {

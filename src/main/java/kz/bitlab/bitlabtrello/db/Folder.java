@@ -15,9 +15,9 @@ public class Folder {
 
     @Id
             @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String name;
+    private Long id;
+    private String name;
 
-    @ManyToMany
-    List<TaskCategory> categories;
+    @ManyToMany(mappedBy = "folders")
+    private List<TaskCategory> categories;
 }

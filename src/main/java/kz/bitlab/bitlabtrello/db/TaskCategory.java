@@ -16,8 +16,8 @@ public class TaskCategory {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    Long id;
-    String name;
+    private Long id;
+    private String name;
 
     public TaskCategory(String name) {
         this.name = name;

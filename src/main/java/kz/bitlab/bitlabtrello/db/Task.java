@@ -1,9 +1,6 @@
 package kz.bitlab.bitlabtrello.db;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,13 +21,13 @@ public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    private Long id;
 
- String title;
+    private String title;
 
-String description; // TEXT
+    private String description; // TEXT
 
- int status; // 0 - todo, 1 - intest, 2 - done, 3 - failed
+    private int status; // 0 - todo, 1 - intest, 2 - done, 3 - failed
 
     public Task(String title, String description, int status) {
         this.title = title;
@@ -38,5 +35,6 @@ String description; // TEXT
         this.status = status;
     }
 
-    // Folders folder; // Many To One
+    @ManyToOne
+    private Folder folder; // Many To One
 }

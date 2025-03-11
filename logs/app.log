@@ -359,3 +359,54 @@ Caused by: org.hibernate.MappingException: Column 'id' is duplicated in mapping 
 2025-03-10T11:10:28.582+05:00  INFO 3500 --- [BitlabTrello] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-10T11:10:28.586+05:00  INFO 3500 --- [BitlabTrello] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-10T11:10:28.589+05:00  INFO 3500 --- [BitlabTrello] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T14:09:40.256+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Starting BitlabTrelloApplication using Java 23.0.1 with PID 6947 (/media/om/Shared Volume/projects/BitLabTrello/target/classes started by om in /media/om/Shared Volume/projects/BitLabTrello)
+2025-03-11T14:09:40.258+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T14:09:40.319+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-11T14:09:40.319+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-11T14:09:40.959+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T14:09:41.008+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2025-03-11T14:09:41.494+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T14:09:41.506+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T14:09:41.506+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T14:09:41.538+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T14:09:41.538+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1218 ms
+2025-03-11T14:09:41.663+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T14:09:41.722+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T14:09:41.766+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T14:09:42.088+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T14:09:42.117+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T14:09:42.435+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ab3a019
+2025-03-11T14:09:42.436+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T14:09:42.470+05:00  WARN 6947 --- [BitlabTrello] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T14:09:42.489+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T14:09:43.392+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T14:09:43.471+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T14:09:43.791+05:00  WARN 6947 --- [BitlabTrello] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T14:09:44.098+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-11T14:09:44.124+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T14:09:44.131+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Started BitlabTrelloApplication in 4.595 seconds (process running for 5.793)
+2025-03-11T14:09:44.194+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Tasks found with findAll():
+2025-03-11T14:09:44.194+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : =--------------------------
+2025-03-11T14:09:44.280+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Task[id=1, title='feed the fishes', description='throw food into the aquarium']
+2025-03-11T14:09:44.280+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Task[id=2, title='mow the lawn', description='get the lawnmower, turn it on and walk around']
+2025-03-11T14:09:44.280+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : 
+2025-03-11T14:09:44.290+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Task found with findById(1L):
+2025-03-11T14:09:44.290+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : -----------------------------
+2025-03-11T14:09:44.290+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Task[id=1, title='feed the fishes', description='throw food into the aquarium']
+2025-03-11T14:09:44.291+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : 
+2025-03-11T14:09:44.354+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Tasks fouund with findByTitle('feed the fishes')
+2025-03-11T14:09:44.354+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : -----------------------------
+2025-03-11T14:09:44.355+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : Task[id=1, title='feed the fishes', description='throw food into the aquarium']
+2025-03-11T14:09:44.355+05:00  INFO 6947 --- [BitlabTrello] [restartedMain] k.b.b.BitlabTrelloApplication            : 
+2025-03-11T14:09:48.781+05:00  INFO 6947 --- [BitlabTrello] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T14:09:48.783+05:00  INFO 6947 --- [BitlabTrello] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T14:09:48.787+05:00  INFO 6947 --- [BitlabTrello] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T14:09:48.791+05:00  INFO 6947 --- [BitlabTrello] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T14:09:48.799+05:00  INFO 6947 --- [BitlabTrello] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

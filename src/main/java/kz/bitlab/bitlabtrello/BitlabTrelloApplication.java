@@ -24,7 +24,7 @@ public class BitlabTrelloApplication {
     @Bean
     public CommandLineRunner demo(TaskRepository taskRepository, FolderRepository folderRepository, CommentRepository commentRepository, TaskCategoryRepository taskCatRepository) {
         return (args) -> {
-            taskCatRepository.save(new TaskCategory());
+//            taskCatRepository.save(new TaskCategory());
 
             //save several tasks
             taskRepository.save(new Task( "feed the fishes", "throw food into the aquarium", 1));

@@ -19,6 +19,6 @@ public class Folder {
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "foldersInCategories")
+    @ManyToMany(mappedBy = "foldersInCategories", cascade = CascadeType.ALL)
     private List<TaskCategory> categories;
 }

@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.slf4j.Logger;
 import org.springframework.context.annotation.Bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
@@ -26,9 +27,26 @@ public class BitlabTrelloApplication {
         return (args) -> {
 //            taskCatRepository.save(new TaskCategory());
 
+            Folder folder = new Folder();
+            TaskCategory taskCategory = new TaskCategory();
+            folder.setName("Uni tasks");
+            taskCategory.setName("Urgent");
+            List<TaskCategory> categoryList = new ArrayList<>();
+            categoryList.add(taskCategory);
+            List<Folder> folderList = new ArrayList<>();
+            folderList.add(folder);
+
+            folder.setCategories(categoryList);
+            taskCategory.setFoldersInCategories(folderList);
+
+            taskCatRepository.save(taskCategory);
+            folderRepository.save(folder);
+
             //save several tasks
             taskRepository.save(new Task( "feed the fishes", "throw food into the aquarium", 1));
             taskRepository.save(new Task("mow the lawn", "get the lawnmower, turn it on and walk around", 0));
+
+
 
             //fetch all tasks
             log.info("Tasks found with findAll():");

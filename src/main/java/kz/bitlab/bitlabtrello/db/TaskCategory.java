@@ -19,7 +19,7 @@ public class TaskCategory {
     private Long id;
     private String name;
 
-    @ManyToMany()
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "folders_to_categories",
             joinColumns = @JoinColumn(name = "taskcategory_id"),
